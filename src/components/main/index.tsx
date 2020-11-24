@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function index() {
-  return <div>main component</div>;
+  return <div>main 2component</div>;
 }
