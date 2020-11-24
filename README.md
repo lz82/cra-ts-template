@@ -1,5 +1,16 @@
 # 基于 CRA(template=typescript)的项目模板
 
+## scripts
+
+可用脚本：
+
+- `yarn start`: 启动 dev
+- `yarn build`: 打生产打包
+- `yarn build:qa`: 打包测试环境
+- `yarn lint`: 检查语法和样式
+- `yarn cz`: 提交代码
+- `yarn cloc`: 统计代码量
+
 ## 依赖说明
 
 由于`cra`的`4.x`版本和`typescript`的`4.x`版本有冲突，导致必须每次删除`tsconfig.json`才能启动，因此先使用`3.x`的`cra`和`typescript`
@@ -42,18 +53,7 @@
 - 添加`less module`
 - 在每个 less 文件中自动引入全局变量`src/styles/variables.less`
 
-## scripts
-
-可用脚本：
-
-- `yarn start`: 启动 dev
-- `yarn build`: 打生产打包
-- `yarn build:qa`: 打包测试环境
-- `yarn lint`: 检查语法和样式
-- `yarn cz`: 提交代码
-- `yarn cloc`: 统计代码量
-
-# env 环境变量
+## env 环境变量
 
 在`yarn`或者`npm`时，可以读取`package.json`中的内容(参考文章:[package-json-values-are-accessible-in-npm-yarn-scripts](https://www.stefanjudis.com/today-i-learned/package-json-values-are-accessible-in-npm-yarn-scripts/))
 

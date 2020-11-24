@@ -19,7 +19,7 @@ function App() {
     <div className={css['App']}>
       <Button type="primary">add</Button>
       <MainComponent />
-      {size}
+      <div className={css['rect']}>Hover me!</div>
     </div>
   );
 }

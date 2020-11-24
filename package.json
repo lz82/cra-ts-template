@@ -3,7 +3,10 @@
   "token": "_cra_ts_template_token_",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@types/js-cookie": "^2.2.6",
+    "js-cookie": "^2.2.1"
+  },
   "scripts": {
     "start": "craco start",
     "build:qa": "dotenv -e .env.qa craco build",

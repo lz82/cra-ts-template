@@ -1,4 +1,4 @@
-/// <reference types="react-scripts" />
+// / <reference types="react-scripts" />
 
 declare module '*.module.less' {
   const css: { readonly [key: string]: string };

@@ -1,5 +1,25 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 
   width: @containerWidth;
+
+  .rect {
+    width: 200px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      height: 80px;
+      margin-top: -20px;
+    }
+  }
 }
