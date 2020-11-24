@@ -64,7 +64,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/git-cz"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
