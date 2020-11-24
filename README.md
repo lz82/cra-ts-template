@@ -29,3 +29,8 @@
 使用`npx husky add pre-commit "yarn lint"`来添加钩子
 
 上面命令意思是在`pre-commit`时，执行`yarn lint`命令
+
+## git-cz
+
+使用`(commitizen)[https://github.com/commitizen]`来规范`git commit message`
+该版本使用了`git-cz`
