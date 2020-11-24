@@ -12,7 +12,8 @@
     "lint:style": "prettier -c --write src",
     "lint": "concurrently yarn:lint:*",
     "postinstall": "husky install",
-    "cz": "git add . & git-cz"
+    "cz": "git add . & git-cz",
+    "cloc": "cloc --exclude-dir='node_modules' . "
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
     "antd": "^4.8.5",
+    "cloc": "^2.7.0",
     "concurrently": "^5.3.0",
     "craco-less": "^1.17.0",
     "craco-plugin-style-resources-loader": "^0.0.3",

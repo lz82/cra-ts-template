@@ -32,5 +32,22 @@
 
 ## git-cz
 
-使用`[commitizen](https://github.com/commitizen)`来规范`git commit message`
+使用[commitizen](https://github.com/commitizen)来规范`git commit message`
 该版本使用了`git-cz`
+
+## craco
+
+- 设置了`@`这一个别名，指向`src`目录
+- 添加`less`
+- 添加`less module`
+- 在每个 less 文件中自动引入全局变量`src/styles/variables.less`
+
+## scripts
+
+可用脚本：
+
+- `yarn start`: 启动 dev
+- `yarn build`: 打生产打包
+- `yarn lint`: 检查语法和样式
+- `yarn cz`: 提交代码
+- `yarn cloc`: 统计代码量
