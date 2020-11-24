@@ -48,6 +48,17 @@
 
 - `yarn start`: 启动 dev
 - `yarn build`: 打生产打包
+- `yarn build:qa`: 打包测试环境
 - `yarn lint`: 检查语法和样式
 - `yarn cz`: 提交代码
 - `yarn cloc`: 统计代码量
+
+# env 环境变量
+
+在`yarn`或者`npm`时，可以读取`package.json`中的内容(参考文章:[package-json-values-are-accessible-in-npm-yarn-scripts](https://www.stefanjudis.com/today-i-learned/package-json-values-are-accessible-in-npm-yarn-scripts/))
+
+将`token`的 key 存在`package.json`中，从`.env`中读取
+
+在`/src/config`下会根据当前的环境变量获取对应的值
+目前有`.env.development`、`.env.qa`和`.env.production`分别对应开发、测试、生产三个环境
+当有新环境需要打包时，使用`dotenv -e .env.xxx`指定使用当`.env`即可

@@ -4,6 +4,10 @@ import './App.less';
 import css from './app.module.less';
 import MainComponent from '@/components/main';
 
+import config from '@/config';
+
+console.log(config);
+
 // console.log(c);
 function App() {
   const [size, setSize] = useState(100);
