@@ -32,5 +32,5 @@
 
 ## git-cz
 
-使用`(commitizen)[https://github.com/commitizen]`来规范`git commit message`
+使用`[commitizen](https://github.com/commitizen)`来规范`git commit message`
 该版本使用了`git-cz`
