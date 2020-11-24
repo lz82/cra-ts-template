@@ -12,7 +12,7 @@
     "lint:style": "prettier -c --write src",
     "lint": "concurrently yarn:lint:*",
     "postinstall": "husky install",
-    "cz": "git-cz"
+    "cz": "git add . & git-cz"
   },
   "eslintConfig": {
     "extends": [
