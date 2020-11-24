@@ -5,6 +5,7 @@ import css from './app.module.less';
 import MainComponent from '@/components/main';
 
 const a = 'a';
+a = 'b';
 
 function App() {
   return (
