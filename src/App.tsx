@@ -7,7 +7,7 @@ import MainComponent from '@/components/main';
 // console.log(c);
 function App() {
   const [size, setSize] = useState(100);
-
+  console.log('aaa');
   useEffect(() => {
     setSize(1000);
   }, []);
