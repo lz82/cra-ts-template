@@ -6,7 +6,7 @@ import MainComponent from '@/components/main';
 
 const a = 'a';
 a = 'b';
-
+console.log(c);
 function App() {
   return (
     <div className={css['App']}>
