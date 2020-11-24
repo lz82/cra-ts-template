@@ -11,7 +11,8 @@
     "lint:js": "eslint --ext .js --ext .tsx --ext .jsx src/ --fix",
     "lint:style": "prettier -c --write src",
     "lint": "concurrently yarn:lint:*",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "cz": "git-cz"
   },
   "eslintConfig": {
     "extends": [
