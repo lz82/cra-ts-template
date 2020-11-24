@@ -10,7 +10,7 @@
 
 使用`CSS MODULE`需要在`react-app-env.d.ts`中声明`*.module.less`
 
-使用`Webpack Alias`需要在`tsconfig`中同时为`typescript`指定路径别名。
+使用`Webpack Alias`需要在`tsconfig`中同时为`typescript`指定路径别名。（目前采用指定`extends`文件的方式）
 
 ## husky
 
