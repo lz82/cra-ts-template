@@ -58,3 +58,18 @@
 在`/src/config`下会根据当前的环境变量获取对应的值
 目前有`.env.development`、`.env.qa`和`.env.production`分别对应开发、测试、生产三个环境
 当有新环境需要打包时，使用`dotenv -e .env.xxx`指定使用当`.env`即可
+
+## 资源文件
+
+在`typescript`中引入资源文件(图片)时，会提示无法识别。
+统一在`react-app-env.d.ts`中声明
+
+```typescript
+declare module '*.svg' {
+  const content: any;
+  export default content;
+}
+
+declare module '*.png';
+declare module '*.jpg';
+```
