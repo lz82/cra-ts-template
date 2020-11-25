@@ -11,10 +11,6 @@
 - `yarn cz`: 提交代码
 - `yarn cloc`: 统计代码量
 
-## 依赖说明
-
-由于`cra`的`4.x`版本和`typescript`的`4.x`版本有冲突，导致必须每次删除`tsconfig.json`才能启动，因此先使用`3.x`的`cra`和`typescript`
-
 ## webpack 配置
 
 采用`craco`来代替`react-scrpits`
