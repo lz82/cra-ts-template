@@ -73,3 +73,22 @@ declare module '*.svg' {
 declare module '*.png';
 declare module '*.jpg';
 ```
+
+## Error Boundary(错误边界)
+
+在`/src/components/error-boundary`对错误进行捕获，如果发生错误，则显示错误页
+但是以下几类无法捕获
+
+- 事件处理
+- 异步
+- 服务端渲染
+- 自身异常
+  参考:[官方文档](https://react.docschina.org/docs/error-boundaries.html)
+
+## 全局 Loading
+
+由于`antd`暂时没有提供以服务对方式调用`spin`，因此自己写了一个
+在`public/index.html`中实现了一个`loadingMask`和一个`loading.gif`
+默认`display:none`,当`loading`时将`display`设为`flex`即可居中显示
+
+在`utils/loading.ts`中暴露了`showLoading`和`hideLoading`两个方法，可以直接使用
