@@ -1,13 +1,13 @@
 import instance from './axios';
 import qs from 'qs';
 
-export function AppPost(url: string, data: any) {
-  return new Promise((resolve, reject) => {
+export function AppPost<T>(url: string, data: any) {
+  return new Promise<T>((resolve, reject) => {
     instance
       .post(url, data)
       .then((res) => {
         if (res.data.code === 200) {
-          resolve(res.data.data);
+          resolve(res.data.data as T);
         } else {
           reject(res.data.msg || res.data.errMsg);
         }
@@ -18,8 +18,8 @@ export function AppPost(url: string, data: any) {
   });
 }
 
-export function AppGet(url: string, data: any) {
-  return new Promise((resolve, reject) => {
+export function AppGet<T>(url: string, data: any) {
+  return new Promise<T>((resolve, reject) => {
     instance
       .get(url, {
         params: {
@@ -31,7 +31,7 @@ export function AppGet(url: string, data: any) {
       })
       .then((res) => {
         if (res.data.code === 200) {
-          resolve(res.data.data);
+          resolve(res.data.data as T);
         } else {
           reject(res.data.msg || res.data.errMsg);
         }

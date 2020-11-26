@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import './App.less';
 import css from './app.module.less';
 import MainComponent from '@/components/main';
+import { appApi } from '@/services';
 
 import config from '@/config';
 
@@ -14,6 +15,15 @@ function App() {
   console.log('aaa');
   useEffect(() => {
     setSize(1000);
+    const fetchData = async () => {
+      const { token } = await appApi.checkLogin({
+        username: 'lz',
+        password: 'a',
+        verifyCode: 'aa'
+      });
+      console.log(token);
+    };
+    fetchData();
   }, []);
   return (
     <div className={css['App']}>
